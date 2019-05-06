@@ -1,0 +1,14 @@
+= TODO
+
+== Initial Commit
+
+* [x] Kotlin  
+** [x] build file
+** [x] dependencies
+* [ ] Hazelcast 
+** [x] client dependency 
+* [ ] Docker
+** [x] local docker image
+* [ ] Confluent Hub
+** [x] gradle integration 
+** [x] docker integration

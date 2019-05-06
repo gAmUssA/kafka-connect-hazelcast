@@ -1,0 +1,40 @@
+= Welcome to your new Kafka Connect connector!
+
+== Running in development
+
+The link:docker-compose.yml[docker-compose.yml] that is included in this repository is based on the Confluent Platform Docker images. 
+The hostname `confluent` must be resolvable by your host. 
+
+----
+docker-compose up -d
+----
+
+Start the connector with debugging enabled.
+
+----
+./bin/debug.sh
+----
+
+Start the connector with debugging enabled. This will wait for a debugger to attach.
+
+----
+export SUSPEND='y'
+./bin/debug.sh
+----
+
+== Build and Package 
+
+To build a distributive version of the connector package use following command
+
+[source,shell]
+----
+./gradlew distZip
+----
+
+== Reading list
+
+* https://github.com/infinispan/infinispan-kafka
+* https://github.com/foogaro/change-data-capture
+* https://twitter.com/gunnarmorling/status/1113893746343542785
+* https://github.com/jcustenborder/kafka-connect-redis
+* https://github.com/Landoop/stream-reactor/tree/master/kafka-connect-hazelcast
